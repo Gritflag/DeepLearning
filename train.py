@@ -63,7 +63,7 @@ def train_validate(model, trainloader, valloader, criterion, optimizer, writer, 
         print(f"Epoch {epoch+1}/{epochs}: Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}, Accuracy: {accuracy:.4f}%")
 
 if __name__ == "__main__":
-    data_dir = '/home/hdd/student/intern/casting/data'
+    data_dir = '/data'
     # 데이터 변환을 위한 업데이트된 변환 코드
     transform = transforms.Compose([
         transforms.Resize((224, 224)),  # 이미지 크기 조정
